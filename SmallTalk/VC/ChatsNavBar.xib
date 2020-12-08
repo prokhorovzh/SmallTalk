@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatsNavBar" customModule="Messnet" customModuleProvider="target">
+            <connections>
+                <outlet property="Content" destination="Le4-9d-IOa" id="UJo-Zi-Dpq"/>
+                <outlet property="imageUser" destination="Yby-4o-zlV" id="HIs-iT-hns"/>
+                <outlet property="nameLabel" destination="y7f-c4-Q7f" id="fff-hE-0WC"/>
+                <outlet property="statusLabel" destination="75K-fY-Tib" id="Ir8-bx-ng3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Le4-9d-IOa">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gQl-0j-6SH">
+                            <rect key="frame" x="20" y="30" width="374" height="80"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yby-4o-zlV">
+                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="UKb-k8-LY7"/>
+                                        <constraint firstAttribute="width" constant="80" id="eFn-0J-EaZ"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="0vg-ql-LlH">
+                                    <rect key="frame" x="88" y="14" width="286" height="52"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7f-c4-Q7f">
+                                            <rect key="frame" x="0.0" y="0.0" width="51.5" height="24.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75K-fY-Tib">
+                                            <rect key="frame" x="0.0" y="36.5" width="32" height="15.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.85820132490000001" green="0.31823155279999998" blue="0.3411436081" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="gQl-0j-6SH" secondAttribute="trailing" constant="20" id="B5r-VY-isv"/>
+                        <constraint firstItem="gQl-0j-6SH" firstAttribute="centerY" secondItem="Le4-9d-IOa" secondAttribute="centerY" id="BOb-vL-yyM"/>
+                        <constraint firstItem="gQl-0j-6SH" firstAttribute="leading" secondItem="Le4-9d-IOa" secondAttribute="leading" constant="20" id="nAt-Xt-soU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Le4-9d-IOa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6do-gf-Pct"/>
+                <constraint firstItem="Le4-9d-IOa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8eP-Tj-qjb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Le4-9d-IOa" secondAttribute="trailing" id="gQC-0V-fBh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Le4-9d-IOa" secondAttribute="bottom" id="iRd-2G-yZK"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </view>
+    </objects>
+</document>
